@@ -56,15 +56,55 @@
 		12CCA7CC26E80EE200D88A68 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				12CCA7CD26E80EE200D88A68 /* AppDelegate.swift */,
-				12CCA7CF26E80EE200D88A68 /* SceneDelegate.swift */,
-				12CCA7D126E80EE200D88A68 /* ViewController.swift */,
-				12CCA7D326E80EE200D88A68 /* Main.storyboard */,
-				12CCA7D626E80EE300D88A68 /* Assets.xcassets */,
-				12CCA7D826E80EE300D88A68 /* LaunchScreen.storyboard */,
-				12CCA7DB26E80EE300D88A68 /* Info.plist */,
+				12F4391226E81F04002DE2B9 /* VIewControllers */,
+				12F4391126E81ED3002DE2B9 /* Storyboard */,
+				12F4391326E81F2E002DE2B9 /* Resources */,
+				12F4391026E81EC1002DE2B9 /* App */,
+				12F4390F26E81EB8002DE2B9 /* Models */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		12F4390F26E81EB8002DE2B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12F4391026E81EC1002DE2B9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				12CCA7CD26E80EE200D88A68 /* AppDelegate.swift */,
+				12CCA7CF26E80EE200D88A68 /* SceneDelegate.swift */,
+				12CCA7DB26E80EE300D88A68 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		12F4391126E81ED3002DE2B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				12CCA7D326E80EE200D88A68 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		12F4391226E81F04002DE2B9 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12CCA7D826E80EE300D88A68 /* LaunchScreen.storyboard */,
+				12CCA7D126E80EE200D88A68 /* ViewController.swift */,
+			);
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		12F4391326E81F2E002DE2B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12CCA7D626E80EE300D88A68 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3NH456PVT;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.holybuddha.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3NH456PVT;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.holybuddha.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
