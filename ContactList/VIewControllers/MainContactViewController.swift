@@ -45,10 +45,10 @@ class MainContactViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailsVC = segue.destination as? ContactInfoViewController else { return }
+        guard let contactInfoVC = segue.destination as? ContactInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let person = contactList[indexPath.row]
-        detailsVC.person = person
+        contactInfoVC.person = person
         }
 }
     

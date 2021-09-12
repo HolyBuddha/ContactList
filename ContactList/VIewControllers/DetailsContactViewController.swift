@@ -12,14 +12,10 @@ class DetailsContactViewController: UITableViewController {
     var contactList = Person.getContact()
     private var dataManagerCount = Person.getContact().count
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         dataManagerCount
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
