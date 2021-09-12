@@ -9,7 +9,7 @@ import UIKit
 
 class MainContactViewController: UITableViewController {
     
-    private var contactList = Person.getContact()
+    var contactList = Person.getContact()
     private var dataManagerCount = Person.getContact().count
     
     override func viewDidLoad() {
@@ -40,8 +40,8 @@ class MainContactViewController: UITableViewController {
         false
     }
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let currentTrack = contactList.remove(at: sourceIndexPath.row)
-        contactList.insert(currentTrack, at: destinationIndexPath.row)
+        let currentContact = contactList.remove(at: sourceIndexPath.row)
+        contactList.insert(currentContact, at: destinationIndexPath.row)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

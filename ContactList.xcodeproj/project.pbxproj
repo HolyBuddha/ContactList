@@ -17,6 +17,7 @@
 		12F4391B26E946AD002DE2B9 /* MainContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4391A26E946AD002DE2B9 /* MainContactViewController.swift */; };
 		12F4391D26E946E7002DE2B9 /* DetailsContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4391C26E946E7002DE2B9 /* DetailsContactViewController.swift */; };
 		12F4391F26E97F21002DE2B9 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4391E26E97F21002DE2B9 /* ContactInfoViewController.swift */; };
+		12F4392326EE5D12002DE2B9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4392226EE5D12002DE2B9 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		12F4391A26E946AD002DE2B9 /* MainContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactViewController.swift; sourceTree = "<group>"; };
 		12F4391C26E946E7002DE2B9 /* DetailsContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContactViewController.swift; sourceTree = "<group>"; };
 		12F4391E26E97F21002DE2B9 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactInfoViewController.swift; path = ContactList/VIewControllers/ContactInfoViewController.swift; sourceTree = SOURCE_ROOT; };
+		12F4392226EE5D12002DE2B9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				12CCA7D826E80EE300D88A68 /* LaunchScreen.storyboard */,
 				12CCA7D326E80EE200D88A68 /* Main.storyboard */,
+				12F4392226EE5D12002DE2B9 /* TabBarViewController.swift */,
 				12F4391E26E97F21002DE2B9 /* ContactInfoViewController.swift */,
 			);
 			path = Storyboard;
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F4392326EE5D12002DE2B9 /* TabBarViewController.swift in Sources */,
 				12F4391D26E946E7002DE2B9 /* DetailsContactViewController.swift in Sources */,
 				12F4391726E943CE002DE2B9 /* DataManager.swift in Sources */,
 				12CCA7CE26E80EE200D88A68 /* AppDelegate.swift in Sources */,
