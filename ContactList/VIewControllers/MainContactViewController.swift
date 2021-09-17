@@ -27,9 +27,11 @@ class MainContactViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fullname", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let contact = contactList[indexPath.row]
-        content.text = contact.fullName
+        let person = contactList[indexPath.row]
+        
+        content.text = person.fullName
         cell.contentConfiguration = content
+        
         return cell
     }
     
@@ -47,8 +49,7 @@ class MainContactViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let contactInfoVC = segue.destination as? ContactInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let person = contactList[indexPath.row]
-        contactInfoVC.person = person
+        contactInfoVC.person = contactList[indexPath.row]
         }
 }
     

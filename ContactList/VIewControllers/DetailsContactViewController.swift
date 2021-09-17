@@ -21,6 +21,7 @@ class DetailsContactViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "phone", for: indexPath)
+        
         var content = cell.defaultContentConfiguration()
         let person = contactList[indexPath.section]
         
@@ -40,5 +41,8 @@ class DetailsContactViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         contactList[section].fullName
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
