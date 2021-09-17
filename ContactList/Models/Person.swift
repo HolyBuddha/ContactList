@@ -15,25 +15,28 @@ struct Person {
     var fullName: String { "\(name) \(surname)" }
     
     static func getContact() -> [Person] {
-        let dataManager = DataManager()
+        
+        let dataManager = DataManager.shared
+        
         var contactFromData: [Person] = []
         
-        for _ in dataManager.names {
-        let name = dataManager.names.randomElement() ?? ""
-        let surname = dataManager.surnames.randomElement() ?? ""
-        let number = dataManager.numbers.randomElement() ?? ""
-        let email = dataManager.emails.randomElement() ?? ""
+        let names = dataManager.names.shuffled()
+        let surnames = dataManager.surnames.shuffled()
+        let numbers = dataManager.numbers.shuffled()
+        let emails = dataManager.emails.shuffled()
         
-        let person = Person(name: name, surname: surname, number: number, email: email)
         
-        dataManager.names = dataManager.names.filter(){$0 != name}
-        dataManager.surnames = dataManager.surnames.filter(){$0 != surname}
-        dataManager.numbers = dataManager.numbers.filter(){$0 != number}
-        dataManager.emails = dataManager.emails.filter(){$0 != email}
+        for index in 0..<dataManager.names.count {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                number: numbers[index],
+                email: emails[index]
+            )
             
-        contactFromData.append(person)
+            contactFromData.append(person)
         }
-        
+
         return contactFromData.sorted { $0.name < $1.name }
     }
         

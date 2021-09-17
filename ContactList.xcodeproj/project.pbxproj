@@ -99,8 +99,6 @@
 			children = (
 				12CCA7D826E80EE300D88A68 /* LaunchScreen.storyboard */,
 				12CCA7D326E80EE200D88A68 /* Main.storyboard */,
-				12F4392226EE5D12002DE2B9 /* TabBarViewController.swift */,
-				12F4391E26E97F21002DE2B9 /* ContactInfoViewController.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -110,6 +108,8 @@
 			children = (
 				12F4391A26E946AD002DE2B9 /* MainContactViewController.swift */,
 				12F4391C26E946E7002DE2B9 /* DetailsContactViewController.swift */,
+				12F4392226EE5D12002DE2B9 /* TabBarViewController.swift */,
+				12F4391E26E97F21002DE2B9 /* ContactInfoViewController.swift */,
 			);
 			path = VIewControllers;
 			sourceTree = "<group>";
